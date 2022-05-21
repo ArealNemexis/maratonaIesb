@@ -14,51 +14,52 @@ int main(int argc, char const *argv[])
     char frase2[] = "golzin";
     char *frase3;
 
-    // printf("frase = %s\n", frase);
+    printf("frase = %s\n", frase);
 
-    // pause();
+    pause();
 
-    // printf("frase2 = %s\n", frase2);
+    printf("frase2 = %s\n", frase2);
 
-    // pause();
+    pause();
 
-    // printf("sizeof frase1 %lu\n", sizeof(frase) / sizeof(char));
+    printf("sizeof frase1 %lu\n", sizeof(frase) / sizeof(char));
 
-    // pause();
+    pause();
 
-    // printf("sizeof frase2 %lu\n", sizeof(frase2) / sizeof(char));
+    printf("sizeof frase2 %lu\n", sizeof(frase2) / sizeof(char));
 
-    // pause();
+    pause();
 
-    // printf("strlen frase %lu\n", strlen(frase));
+    printf("strlen frase %lu\n", strlen(frase));
 
-    // pause();
+    pause();
 
-    // printf("strlen frase %lu\n", strlen(frase2));
+    printf("strlen frase2 %lu\n", strlen(frase2));
 
-    // pause();
+    pause();
 
     char *frasenova = "golzin branco";
     frase3 = (char *)malloc(sizeof(char) * (strlen(frasenova) + 1));
-    printf("%ld\n", strlen(frasenova)); // 13
 
     strcpy(frase3, "golzin branco");
-    printf("sizeof frase3 %lu\n", strlen(frase3));
+    printf("apos malloc e strcpy frase3 = %s\n", frase3);
 
-    // printf("apos malloc e strcpy frase3 = %s\n", frase3);
+    printf("strlen frase3 %lu\n", strlen(frase3));
+    printf("sizeof frase3 %lu\n", sizeof(frase3));
 
-    // pause();
 
-    // printf("sizeof frase3 %lu\n", sizeof(frase3) / sizeof(char));
+    pause();
+
+    printf("sizeof frase3 %lu\n", sizeof(frase3) / sizeof(char));
     pause();
 
     printf("strcmp retorna 0 caso as strings forem iguais\n");
-    printf("strcmp(frase3, 'golzin branco') =  %d", strcmp(frase3, "golzin branco"));
+    printf("strcmp(frase3, 'golzin branco') =  %d\n", strcmp(frase3, "golzin branco"));
 
     pause();
 
     printf("strcmp retorna 1 caso as strings forem diferentes\n");
-    printf("strcmp(frase3, 'golzin aabranco') =  %d", strcmp(frase3, "golzin aabranco"));
+    printf("strcmp(frase3, 'golzin aabranco') =  %d\n", strcmp(frase3, "golzin aabranco"));
 
     return 0;
 }
